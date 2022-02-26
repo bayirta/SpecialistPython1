@@ -5,3 +5,10 @@
 # Для всех остальных случаев не выводить ничего.
 
 # TODO: your code here
+z = int(input("введите число "))
+if z%3 == 0 and z%5 == 0:
+    print("Foobar")
+elif z%3 == 0:
+    print("Foo")
+elif z%5 == 0:
+    print("Bar")
