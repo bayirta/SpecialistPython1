@@ -3,3 +3,7 @@
 # то программа запрашивает ввод снова.
 
 # TODO: your code here
+enter = str(input("Ввод "))
+while enter != "хватит":
+    enter = str(input("Ввод"))
+print()
