@@ -5,3 +5,10 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+numbers = [2, -5, 8, 9, -25, 25, 4, 64, 256, 100]
+res = []
+for number in numbers:
+    res_data = number ** 0.5
+    if res_data ** 2 == number:
+        res.append(int(res_data))
+print(res)
