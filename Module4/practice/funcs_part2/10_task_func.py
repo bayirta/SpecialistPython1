@@ -3,7 +3,13 @@
 
 def average(*args):
     # TODO: your code here
-    pass
+    sum_value = 0
+    i = 0
+    for el in args:
+        sum_value += el
+        i += 1
+        aver_value = sum_value / i
+    return aver_value
 
 
 print(average(3, 4, 8))
