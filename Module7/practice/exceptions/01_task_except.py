@@ -4,3 +4,15 @@
 # На вход программе подается строка формата nxm (x - латинская буква икс).
 # Пример входных данных: 12x6
 # Если данные вводятся в неверном формате, сообщить об этом и запросить ввод заново.
+while True:
+    try:
+        raw_data = input("Введите стороны прямоугольника ")
+        n = float(raw_data.split("x")[0])
+        m = float(raw_data.split("x")[1])
+        res = n // m
+        print("Можно вырезать квадратов: ", int(res))
+        break
+    except ValueError:
+        print("Неверный формат")
+    except ZeroDivisionError:
+        print("Одна из сторон равна нулю")
