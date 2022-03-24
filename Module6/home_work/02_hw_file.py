@@ -2,4 +2,8 @@
 # Найдите сумму всех чисел, пропуская все строки содержащие не числовые значения
 
 with open("data/info.txt", "r") as f:
-    pass
+    sum_int = 0
+    for line in f:
+        if line.rstrip().isdigit():
+            sum_int += int(line)
+    print(sum_int)
