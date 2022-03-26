@@ -5,3 +5,16 @@
 #   например, lst = [1, 2, 4, 5, 6, 2, 5, 2], нужно получить lst2 = [1, 2, 4, 5, 6]
 #   2. элементы исходного списка, которые не имеют повторений(встречаются только один раз):
 #   например, lst = [1 , 2, 4, 5, 6, 2, 5, 2], нужно получить lst2 = [1, 4, 6]
+numbers = [1, 2, 4, 5, 6, 2, 5, 2]
+
+unique_numbers = []
+non_repeat_numbers = []
+for number in numbers:
+    if number in unique_numbers:
+        pass
+    else:
+        unique_numbers.append(number)
+    if numbers.count(number) == 1:
+        non_repeat_numbers.append(number)
+print(unique_numbers)
+print(non_repeat_numbers)
